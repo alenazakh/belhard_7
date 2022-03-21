@@ -7,3 +7,21 @@
 "Выполняем {func.__name__} с args: {args} и kwargs: {kwargs}".
 После выполнения функции напечатать строку "Выполнено {func.__name__}"
 """
+
+
+def log_decorator(func):
+    def wrapper (*args, **kwargs):
+        print(f"Выполняем {func.__name__} c args: {args} и kwargs: {kwargs}.")
+        func_main = func(*args, **kwargs)
+        print(f"Выполнено {func.__name__}.")
+        return func_main
+    return wrapper
+
+
+@log_decorator
+def hello(name):
+    print(f"Привет, {name}!")
+    return name
+
+
+hello('Helen')

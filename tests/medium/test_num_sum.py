@@ -4,7 +4,8 @@ from tasks.medium.num_sum import sum_of_numbers
 
 
 @pytest.mark.parametrize(
-    "n, expected", (
+    "n, expected",
+    (
         (123, 6),
         (1111111, 7),
         (4, 4),
