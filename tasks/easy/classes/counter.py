@@ -13,11 +13,11 @@
 - метод __next__
 """
 
+
 class Counter():
-    def __init__(self, value=0, end = 2147483647):
+    def __init__(self, value=0, end=2147483647):
         self.value = value
         self.end = end
-
 
     def __iter__(self):
         self.list = ()
@@ -25,25 +25,23 @@ class Counter():
             self.list.append(self.value)
         return self.list
 
-
     def __next__(self):
-        index=0
+        index = 0
         for index in range(len(self.list)):
             return self.list[index]
-
 
     def increase(self):
         while self.value < self.end:
             self.value += 1
             yield self.value
 
-
     def decrease(self):
         while self.value > 0:
             self.value -= 1
             yield self.value
 
-counter1 = Counter(4,13)
+
+counter1 = Counter(4, 13)
 counter01 = counter1.increase()
 print(next(counter01))
 print(next(counter01))
@@ -53,5 +51,3 @@ print(next(counter01))
 print(next(counter01))
 print(next(counter01))
 print(next(counter01))
-
-

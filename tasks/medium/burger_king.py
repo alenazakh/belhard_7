@@ -41,14 +41,14 @@
 
 
 def bread(func):
-    def wrapper ():
+    def wrapper():
         print("</------------\\>")
         func()
         print("<\\____________/>")
     return wrapper
 
 
-def tomato (func):
+def tomato(func):
     def wrapper():
         print("*** помидоры ****")
         func()
@@ -62,14 +62,14 @@ def salad(func):
     return wrapper
 
 
-def cheese (func):
+def cheese(func):
     def wrapper():
         print("^^^^^ сыр ^^^^^^")
         func()
     return wrapper
 
 
-def onion (func):
+def onion(func):
     def wrapper():
         print("----- лук ------")
         func()
@@ -79,13 +79,14 @@ def onion (func):
 @bread
 @onion
 @tomato
-def beef ():
+def beef():
     print("### говядина ###")
+
 
 @bread
 @cheese
 @salad
-def chicken ():
+def chicken():
     print("|||| курица ||||")
 
 

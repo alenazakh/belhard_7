@@ -22,7 +22,7 @@ next(tn_gen) -> 21
 def triangular_numbers():
     num = 1
     while True:
-        res = int(0.5 * num * (num+1))
+        res = int(0.5 * num * (num + 1))
         num += 1
         yield res
 

@@ -14,10 +14,11 @@ add_three = add_numb(3)
 add_three(3) # 6
 """
 
+
 def add_numb(x):
-    def add_numb_inner (y):
-        return x+y
+    def add_numb_inner(y):
+        return x + y
     return add_numb_inner
 
-print(add_numb(3)(4))
 
+print(add_numb(3)(4))

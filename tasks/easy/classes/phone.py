@@ -23,6 +23,7 @@ class Phone():
     model: str
     brand: str
     issue_year: int
+
     def __init__(self, brand, model, issue_year):
         self.brand = brand
         self.model = model
@@ -31,14 +32,14 @@ class Phone():
     def __str__(self):
         return (f"Бренд: {self.brand}\nМодель: {self.model}\nГод выпуска: {self.issue_year}")
 
-    #def __str__(self):
-        #print(f"Бренд: {self.brand}")
-        #print(f"Модель: {self.model}")
-        #print(f"Год выпуска: {self.issue_year}")
-        #return ок
+# def __str__(self):
+# print(f"Бренд: {self.brand}")
+# print(f"Модель: {self.model}")
+# print(f"Год выпуска: {self.issue_year}")
+# return ок
 
     @staticmethod
-    def receive_call (name):
+    def receive_call(name):
         print(f"Звонит {name}")
 
     def get_info(self):
@@ -51,4 +52,3 @@ Phone.receive_call('Helen')
 print(phone1.get_info())
 print(type(phone1.get_info()))
 print(str(phone1))
-

@@ -15,6 +15,7 @@
 """
 STR_VAL = 'python is the fastest-growing major programming language'
 
+
 def count_char(STR_VAL):
     str_val_list = list(STR_VAL)
     unique = []
@@ -26,5 +27,5 @@ def count_char(STR_VAL):
         result.update({item: str_val_list.count(item)})
     return result
 
-print(count_char(STR_VAL))
 
+print(count_char(STR_VAL))

@@ -22,12 +22,12 @@ school_data = {
 }
 
 
-def incr_students (class_name: str, **kwargs):
+def incr_students(class_name: str, **kwargs):
     kwargs[class_name] = kwargs.get(class_name) + 1
     return kwargs
 
 
-def decr_students (class_name: str, **kwargs):
+def decr_students(class_name: str, **kwargs):
     kwargs[class_name] = kwargs.get(class_name) - 1
     return kwargs
 
@@ -37,7 +37,7 @@ def add_class(class_name: str, **kwargs):
     return kwargs
 
 
-def remove_class (class_name: str, **kwargs):
+def remove_class(class_name: str, **kwargs):
     kwargs.pop(class_name)
     return kwargs
 

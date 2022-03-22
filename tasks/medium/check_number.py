@@ -13,13 +13,10 @@ def check_number(n):
     elif n < 1:
         return False
     else:
-        return check_number(n*0.5)
+        return check_number(n * 0.5)
 
 
 print(check_number(8))
 print(check_number(9))
 print(check_number(256))
 print(check_number(1))
-
-
-

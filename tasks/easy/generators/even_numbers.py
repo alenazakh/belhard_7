@@ -11,7 +11,7 @@ next(even_gen) -> 6
 """
 
 
-def get_even_number (start=0):                  # можно завести end для конечности цикла
+def get_even_number(start=0):                  # можно завести end для конечности цикла
     if start == 0:
         start = start
     elif start % 2 == 1:
@@ -19,7 +19,7 @@ def get_even_number (start=0):                  # можно завести end 
     elif start % 2 == 0:
         start = start - 2
     while True:                              # если завести end то будет проверка на больше 0 меньше end
-        start+=2
+        start += 2
         yield start
 
 
